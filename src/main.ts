@@ -12,5 +12,9 @@ import routeConfig from './app/routes';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
 bootstrapApplication(AppComponent, {
-  providers: [provideProtractorTestingSupport(), provideRouter(routeConfig), provideAnimations()],
+  providers: [
+    provideProtractorTestingSupport(),
+    provideRouter(routeConfig),
+    provideAnimations(),
+  ],
 }).catch((err) => console.error(err));

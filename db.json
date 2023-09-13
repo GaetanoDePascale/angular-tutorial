@@ -100,5 +100,26 @@
       "wifi": true,
       "laundry": true
     }
+  ],
+  "heroes": [
+    {
+      "id": 0,
+      "name": "Capitan America",
+      "description": "Capitan America, il cui vero nome è Steven Grant \"Steve\" Rogers, è un personaggio dei fumetti americani creato da Joe Simon e Jack Kirby nel 1941, e pubblicato negli Stati Uniti dalla Timely Comics e in seguito dalla Marvel Comics.",
+      "power": "Scudo"
+    },
+    {
+      "id": 1,
+      "name": "Hulk",
+      "power": "Potenza",
+      "description": "Hulk, alter ego del dr. Robert Bruce Banner, è un personaggio dei fumetti statunitensi pubblicati da Marvel Comics. Creato nel 1962 dallo scrittore Stan Lee e dall'artista Jack Kirby, la sua prima apparizione risale a The Incredible Hulk n. 1 del maggio 1962.",
+      "alterEgo": "Bruce Banner"
+    },
+    {
+      "id": 2,
+      "name": "Thor",
+      "description": "Thor Odinson (lett. \"Thor figlio di Odino\"), più comunemente noto come Thor, e a volte con il suo titolo di Dio del tuono, è un personaggio interpretato da Chris Hemsworth nel Marvel Cinematic Universe, basato sull'omonimo personaggio della Marvel Comics a sua volta ispirato all'omonima divinità norrena. Nella storia Thor è tra i più potenti degli asgardiani, un'antica civiltà aliena che gli umani considerano dei; è uno dei membri fondatori degli Avengers e successivamente prende parte come nuovo membro dei Guardiani della Galassia. Thor è uno dei personaggi principali del MCU a partire dal suo esordio nell'omonimo film del 2011; inizialmente ha ricevuto un'accoglienza mista, ma il film Thor: Ragnarok è generalmente ritenuto il film che ha rinnovato positivamente Thor e la sua storia, portandolo a diventare uno dei personaggi preferiti del pubblico.",
+      "power": "Martello"
+    }
   ]
 }

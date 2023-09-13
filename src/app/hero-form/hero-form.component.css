@@ -1,0 +1,13 @@
+.fab-button-fixed {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    padding: 20px;
+}
+
+.fab-button-relative {
+    position: static;
+    bottom: 0px;
+    right: 0px; 
+    padding: 20px;
+}
