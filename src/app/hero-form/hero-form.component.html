@@ -6,11 +6,11 @@
       class="fab-button-fixed"
     ></p-button>
     <div
-      class="card flex justify-content-center"
+      class="card flex "
       *ngFor="let hero of heroFilteredList"
     >
       <p-card header="{{ hero?.name }}" [style]="{'margin-bottom': '10px'}">
-        <p class="m-0">
+        <p class="m-0" >
           {{ hero?.description }}
         </p>
         <ng-template pTemplate="footer">

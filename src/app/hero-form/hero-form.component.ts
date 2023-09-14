@@ -54,6 +54,24 @@ export class HeroFormComponent {
   }
 
   save() {
-    console.log('save:', this.hero);
+    if (this.hero.id === undefined) {
+      const max =
+        this.heroList.reduce((prev, current) =>
+          (prev.id ?? 1) > (current.id ?? 1) ? prev : current
+        ).id ?? 0;
+      this.hero.id = max + 1;
+
+      console.log('new', this.hero);
+
+      this.heroList.push(this.hero);
+    } else {
+      const index = this.heroList.findIndex((x) => x.id === this.hero.id);
+
+      this.heroList[index] = this.hero;
+
+      console.log('update', this.hero);
+    }
+
+    this.visible = false;
   }
 }
