@@ -34,8 +34,11 @@ export class MenuPopupDemo implements OnInit {
         icon: 'pi pi-code',
         routerLink: '/hero',
       },
+      {
+        label: 'Observable',
+        icon: 'pi pi-search',
+        routerLink: '/observable',
+      },
     ];
-
-    console.log(this.items);
   }
 }
