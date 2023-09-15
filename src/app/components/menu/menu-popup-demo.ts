@@ -39,6 +39,11 @@ export class MenuPopupDemo implements OnInit {
         icon: 'pi pi-search',
         routerLink: '/observable',
       },
+      {
+        label: 'Dynamic Compoenent',
+        icon: 'pi pi-spin pi-hourglass',
+        routerLink: '/dynamic-component',
+      },
     ];
   }
 }
