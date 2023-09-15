@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { MenuPopupDemo } from './components/menu/menu-popup-demo';
+import { DynamicModule } from './dynamic/dynamic.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HomeComponent, RouterModule, MenuPopupDemo],
+  imports: [HomeComponent, RouterModule, MenuPopupDemo, DynamicModule],
   template: `
     <main>
       <div class="divTable">

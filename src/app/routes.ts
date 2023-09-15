@@ -4,7 +4,8 @@ import { DetailsComponent } from './details/details.component';
 import { CounterComponent } from './counter/counter.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { ObservableTestComponent } from './observable-test/observable-test.component';
-import { DynamicModule } from './dynamic/dynamic.module';
+import { DynamicComponent } from './dynamic/dynamic.component';
+import { AdService } from './dynamic/ad.service';
 
 const routeConfig: Routes = [
   {
@@ -34,7 +35,8 @@ const routeConfig: Routes = [
   },
   {
     path: 'dynamic-component',
-    component: DynamicModule,
+    component: DynamicComponent,
+    providers: [AdService],
     title: 'Dinamic Component',
   },
 ];
