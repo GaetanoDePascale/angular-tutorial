@@ -8,7 +8,7 @@ import { AdComponent } from './ad.component';
   selector: 'app-ad-banner',
   template: `
     <div class="ad-banner-example">
-      <h3>Advertisements</h3>
+      <h3><p appHighlight>Advertisements</p></h3>
       <ng-template adHost></ng-template>
     </div>
   `,
@@ -34,7 +34,7 @@ export class AdBannerComponent implements OnInit, OnDestroy {
   loadComponent() {
     //this.currentAdIndex = (this.currentAdIndex + 1) % this.ads.length;
     this.currentAdIndex = this.randomIntFromInterval(0, this.ads.length - 1);
-    console.log(this.currentAdIndex);
+
     const adItem = this.ads[this.currentAdIndex];
 
     const viewContainerRef = this.adHost.viewContainerRef;

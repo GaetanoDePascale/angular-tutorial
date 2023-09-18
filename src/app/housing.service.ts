@@ -17,7 +17,6 @@ export class ApplicationService {
     id: number
   ): Promise<HousingLocation | undefined> {
     const data = await fetch(`${this.url}/locations/${id}`);
-    console.log(data.json());
     return (await data.json()) ?? {};
   }
 

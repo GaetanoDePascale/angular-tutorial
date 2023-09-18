@@ -49,8 +49,16 @@ export class HeroFormComponent {
   }
 
   showDialog(hero: Hero | undefined) {
-    this.hero = hero ?? new Hero(undefined, '', '', '', '');
-    this.visible = true;
+    //this.hero = hero ?? new Hero(undefined, '', '', '', '');
+    if (hero?.id !== undefined) {
+      this.heroService
+        .getHeroesById(hero.id)
+        .then((_hero) => {
+          this.hero = _hero ?? new Hero(undefined, '', '', '', '');
+        })
+        .catch((err) => console.log('ERROR', err));
+      this.visible = true;
+    }
   }
 
   save() {

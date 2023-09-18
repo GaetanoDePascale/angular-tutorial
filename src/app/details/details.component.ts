@@ -67,7 +67,8 @@ export class DetailsComponent {
       .getHousingLocationById(housingLocationId)
       .then((housingLocation) => {
         this.housingLocation = housingLocation;
-      });
+      })
+      .catch((err) => console.log('ERROR', err));
   }
 
   submitApplication() {
